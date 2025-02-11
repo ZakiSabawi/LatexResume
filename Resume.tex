@@ -1,0 +1,192 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.4cm]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+ \addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large \scshape  {Zaki Sabawi}} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faPhone\ \underline{+966 590865553} ~ 
+    {\faEnvelope\  \underline{zakirzsabawi@gmail.com}} ~ 
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/zaki-sabawi-2b1572226/}{linkedin.com/in/zaki-sabawi}}}  ~
+    {\faGithub\ \underline{\href{https://github.com/ZakiSabawi}{github.com/ZakiSabawi}} ~
+    \vspace{-8pt}
+\end{center}
+
+ %-----------EDUCATION-----------
+\section{Education} \\[1mm]
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Monash Malaysia University}{Expected Graduation: November 2025}
+      {Bachelor of Computer Science
+      }{Malaysia, Kuala Lumpur}
+  \resumeSubHeadingListEnd
+    \resumeItemListStart
+        \resumeItem {Courses: Algorithm and Data Structures, Theory of Computation, Programing Paradigms,Mobile Application Development, Software quality and testing, Object oriented design and implementation, Data Bases, Computer Architecture ,Introduction to Data Science, Introduction to Cyber Security}
+    \resumeItemListEnd
+    \vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects} 
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+            {\textbf{{Guitar Hero}} $|$ \emph{\href{}{Source Code}}}{TypeScript $|$ NodeJS}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Developed The full back end of a guitar hero inspired games using \textbf{Node.Js} and \textbf{TypeScript}, serving as a hands on project to gain proficiency in \textbf{TypeScript} and \textbf{Functional Programing} Concepts.}
+            \resumeItem{Applied \textbf{Functional Reactive Programming (FRP)} principles, utilizing states and observables to manage game logic and dynamic user interactions}
+            \resumeItem{Strengthened understanding of functional programming paradigms such as immutability, pure functions, and reactive data streams.}
+          \resumeItemListEnd
+ \vspace{-20pt}
+ \resumeProjectHeading
+            {\textbf{{Text to HTML Converter}} $|$ \emph{\href{}{Source Code}}}{Haskell}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Developed a Text-to-HTML converter entirely in \textbf{Haskell}, demonstrating strong problem-solving skills and functional programming expertise.}
+            \resumeItem{Utilized \textbf{Abstract Data Types (ADTs)} to design and manage structured representations of HTML elements, ensuring flexibility and clean code architecture.}
+            \resumeItem{Strengthened understanding of abstraction, functional paradigms, and type-driven development through hands-on implementation.}
+          \resumeItemListEnd
+ \vspace{-20pt}
+ \resumeProjectHeading
+          {\textbf{{Spell Checker}} $|$ \emph{\href{}{Source Code}}}{Python}
+          \\[5mm]
+        \resumeItemListStart
+         \resumeItem{Developed a \textbf{Python-based} spell checker that analyzes user input, builds a \textbf{suffix-trie}, and efficiently stores words for validation and correction.}
+         \resumeItem{Implemented features to detect incorrect words and suggest the three closest matches, using trie depth and frequency analysis for accurate recommendations.}
+         \resumeItem{Optimized performance using a \textbf{suffix-trie}, gaining practical experience with algorithm design, data structures, and text processing techniques.}
+        \resumeItemListEnd
+ \vspace{-20pt}
+\resumeProjectHeading
+          {\textbf{{Veterinary Database}} $|$ \emph{\href{}{Source Code}}}{Oracle $|$ SQL}
+          \\[5mm]
+        \resumeItemListStart
+         \resumeItem{Developed a comprehensive veterinary appointment database using \textbf{Oracle SQL}, managing detailed records including appointment times, prescribed medications, pet and owner information, and pet types.}
+         \resumeItem{Designed and optimized relational database schemas with rigorous constraints to maintain data integrity and prevent errors in scheduling, prescriptions, and record-keeping.}
+         \resumeItem{Gained practical experience in database design, \textbf{SQL programming}, and \textbf{data management} for real-world applications.}
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-28pt}
+%-----------LEADERSHIP-----------
+\section{Leadership} 
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+                   \resumeProjectHeading
+            {\textbf{{Monash Board Gaming Club }} $|$\emph{\href{https://www.instagram.com/monashboardgaming/}{ Instagram}}}{Jun 2024 -- Present}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Vice President of the Monash Board Game club, Oraganized and hosted events feature multiple board game creators, providing club members with access to industry professionals and explore innovative game designs on campus while allowing the creators to test out their new creation.}
+            \resumeItem{Led and Hosted multiple highly attended events for a club of \textbf{150}+ members fostering a lively, social atmosphere where participants where engaged and had fun}
+          \resumeItemListEnd
+          \resumeSubHeadingListEnd
+ \vspace{-12pt}
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{   
+     \textbf{Languages}{: Python, Java, SQL, JavaScript, Haskell, HTML} \\[1mm]
+     \textbf{Developer Tools}{: Oracle, Git} \\[1mm]
+     \textbf{Libraries/Frameworks}{: NodeJS } \\ [1mm]
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+ \vspace{3pt}
+\vspace{10pt}
+
+\vspace{-15pt}
+
+
+
+\end{document}
